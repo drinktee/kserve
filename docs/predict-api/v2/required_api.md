@@ -38,10 +38,12 @@ user does not want to specify a specific model version (in which case
 the server will choose a version based on its own policies).
 
 **Health:**
-
- GET v2/health/live
- GET v2/health/ready
- GET v2/models/${MODEL_NAME}[/versions/${MODEL_VERSION}]/ready
+ 
+ GET `v2/health/live` 
+ 
+ GET `v2/health/ready` 
+ 
+ GET `v2/models/${MODEL_NAME}/versions/${MODEL_VERSION}/ready`
 
 **Server Metadata:**
 
@@ -49,11 +51,11 @@ the server will choose a version based on its own policies).
 
 **Model Metadata:**
 
- GET v2/models/${MODEL_NAME}[/versions/${MODEL_VERSION}]
+ GET `v2/models/${MODEL_NAME}/versions/${MODEL_VERSION}`
 
 **Inference:**
 
- POST v2/models/${MODEL_NAME}[/versions/${MODEL_VERSION}]/infer
+ POST `v2/models/${MODEL_NAME}/versions/${MODEL_VERSION}/infer`
 
 ### Health
 
